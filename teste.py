@@ -7,3 +7,5 @@ def deposita (conta,valor):
     conta["saldo"] += valor
 def saca (conta,valor):
     conta["saldo"] -= valor
+def extrato(conta):
+    print("saldo é {}".format(conta["saldo"]))
