@@ -13,11 +13,22 @@ class Conta:
 
    def deposita(self,valor):
        self.__saldo += valor
+
    def saca(self,valor):
        self.__saldo -= valor
+
    def transfere(self,valor,destino):
        self.saca(valor)
        destino.deposita(valor)
+
+   def pega_saldo(self):
+       return self.__saldo
+
+   def devolve_titular(self):
+       return self.__titular
+
+   def retorna_limite(self):
+       return self.__limte
 
 
 
