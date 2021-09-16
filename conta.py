@@ -16,7 +16,7 @@ class Conta:
        if(valor <= (self.__saldo + self.__limite)):
         self.__saldo -= valor
        else:
-           print("O valor {} passou o limite ")
+           print("O valor {} passou o limite".format(valor))
 
    def transfere(self,valor,destino):
        self.saca(valor)
