@@ -12,8 +12,8 @@ class Conta:
    def deposita(self,valor):
        self.__saldo += valor
 
-   def pode_sacar(self):
-       pass
+   def pode_sacar(self,valor_a_sacar):
+       return valor_a_sacar <= (self.__saldo + self.__limite)
 
    def saca(self,valor):
        if(self.pode_sacar()):
