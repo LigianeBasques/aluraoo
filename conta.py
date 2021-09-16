@@ -21,13 +21,13 @@ class Conta:
        self.saca(valor)
        destino.deposita(valor)
 
-   def pega_saldo(self):
+   def get_saldo(self):
        return self.__saldo
 
-   def devolve_titular(self):
+   def get_titular(self):
        return self.__titular
 
-   def retorna_limite(self):
+   def get_limite(self):
        return self.__limte
 
 
