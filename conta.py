@@ -5,7 +5,7 @@ class Conta:
        self.__numero = numero
        self.__titular = titular
        self.__saldo = saldo
-       self.__limte = limite
+       self.__limite = limite
    def extrato(self):
         print("Saldo {} do titular {}".format(self.__saldo,self.__titular))
 
@@ -29,7 +29,7 @@ class Conta:
        return self.__titular
 
    @property
-   def limite(self,):
+   def limite(self):
        return self.__limite
 
    @limite.setter
