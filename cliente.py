@@ -5,7 +5,7 @@ class Cliente:
     @property
     def nome(self):
         print("chamando @property nome()")
-       return self.__nome.title()
+        return self.__nome.title()
 
 
 
