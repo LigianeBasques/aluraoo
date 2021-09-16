@@ -30,6 +30,9 @@ class Conta:
    def get_limite(self):
        return self.__limte
 
+   def set_limite(self,limite):
+       self.__limte = limite
+
 
 
 
