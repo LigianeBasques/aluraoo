@@ -1,5 +1,3 @@
-
-
 class Conta:
 
    def __init__(self,numero, titular, saldo, limite):
@@ -15,7 +13,10 @@ class Conta:
        self.__saldo += valor
 
    def saca(self,valor):
-       self.__saldo -= valor
+       if(valor <= (self.__saldo + self.__limite)):
+        self.__saldo -= valor
+       else:
+           print("O valor {} passou o limite ")
 
    def transfere(self,valor,destino):
        self.saca(valor)
@@ -28,12 +29,12 @@ class Conta:
        return self.__titular
 
    @property
-   def limite(self):
+   def limite(self,):
        return self.__limite
 
    @limite.setter
    def limite(self,limite):
-       self.__limte = limite
+       self.__limite = limite
 
 
 
