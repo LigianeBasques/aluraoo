@@ -1,9 +1,11 @@
 
 class Cliente:
     def __init__(self,nome):
-        self.nome = nome
+        self.__nome = nome
+    @property
     def nome(self):
-       return self.nome.title()
+        print("chamando @property nome()")
+       return self.__nome.title()
 
 
 
