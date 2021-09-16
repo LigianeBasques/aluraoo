@@ -6,6 +6,9 @@ class Cliente:
     def nome(self):
         print("chamando @property nome()")
         return self.__nome.title()
+    def nome(self,nome):
+        self.__nome = nome
+
 
 
 
