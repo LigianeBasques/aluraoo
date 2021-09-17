@@ -6,6 +6,8 @@ class Conta:
        self.__titular = titular
        self.__saldo = saldo
        self.__limite = limite
+       self.__codigo_banco = limite
+
    def extrato(self):
         print("Saldo {} do titular {}".format(self.__saldo,self.__titular))
 
