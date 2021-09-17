@@ -42,6 +42,10 @@ class Conta:
    def limite(self,limite):
        self.__limite = limite
 
+   @property
+   def codigo_banco(self):
+       return self.__codigo_banco
+
 
 
 
